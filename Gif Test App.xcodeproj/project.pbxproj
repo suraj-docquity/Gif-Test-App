@@ -17,6 +17,12 @@
 		9A6A5427299A48C100BA8ED9 /* Gif_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A5426299A48C100BA8ED9 /* Gif_Test_AppTests.swift */; };
 		9A6A5431299A48C100BA8ED9 /* Gif_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A5430299A48C100BA8ED9 /* Gif_Test_AppUITests.swift */; };
 		9A6A5433299A48C100BA8ED9 /* Gif_Test_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A5432299A48C100BA8ED9 /* Gif_Test_AppUITestsLaunchTests.swift */; };
+		9A6A5441299A494700BA8ED9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9A6A5440299A494700BA8ED9 /* SDWebImage */; };
+		9A6A5443299A494700BA8ED9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9A6A5442299A494700BA8ED9 /* SDWebImageMapKit */; };
+		9A6A5449299A5C8500BA8ED9 /* GifData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A5448299A5C8500BA8ED9 /* GifData.swift */; };
+		9A6A544F299A6BC300BA8ED9 /* GifCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A544E299A6BC300BA8ED9 /* GifCollectionViewController.swift */; };
+		9A6A5451299A6CA400BA8ED9 /* DogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A5450299A6CA400BA8ED9 /* DogData.swift */; };
+		9A6A5453299A6D8C00BA8ED9 /* GifCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6A5452299A6D8C00BA8ED9 /* GifCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,10 @@
 		9A6A542C299A48C100BA8ED9 /* Gif Test AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gif Test AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6A5430299A48C100BA8ED9 /* Gif_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif_Test_AppUITests.swift; sourceTree = "<group>"; };
 		9A6A5432299A48C100BA8ED9 /* Gif_Test_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif_Test_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9A6A5448299A5C8500BA8ED9 /* GifData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifData.swift; sourceTree = "<group>"; };
+		9A6A544E299A6BC300BA8ED9 /* GifCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCollectionViewController.swift; sourceTree = "<group>"; };
+		9A6A5450299A6CA400BA8ED9 /* DogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogData.swift; sourceTree = "<group>"; };
+		9A6A5452299A6D8C00BA8ED9 /* GifCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6A5443299A494700BA8ED9 /* SDWebImageMapKit in Frameworks */,
+				9A6A5441299A494700BA8ED9 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,11 +116,15 @@
 				9A6A540C299A48BC00BA8ED9 /* AppDelegate.swift */,
 				9A6A540E299A48BC00BA8ED9 /* SceneDelegate.swift */,
 				9A6A5410299A48BC00BA8ED9 /* ViewController.swift */,
-				9A6A5412299A48BC00BA8ED9 /* Main.storyboard */,
+				9A6A5448299A5C8500BA8ED9 /* GifData.swift */,
+				9A6A544E299A6BC300BA8ED9 /* GifCollectionViewController.swift */,
 				9A6A5418299A48C100BA8ED9 /* Assets.xcassets */,
+				9A6A5412299A48BC00BA8ED9 /* Main.storyboard */,
 				9A6A541A299A48C100BA8ED9 /* LaunchScreen.storyboard */,
 				9A6A541D299A48C100BA8ED9 /* Info.plist */,
 				9A6A5415299A48BC00BA8ED9 /* Gif_Test_App.xcdatamodeld */,
+				9A6A5450299A6CA400BA8ED9 /* DogData.swift */,
+				9A6A5452299A6D8C00BA8ED9 /* GifCollectionViewCell.swift */,
 			);
 			path = "Gif Test App";
 			sourceTree = "<group>";
@@ -146,6 +162,10 @@
 			dependencies = (
 			);
 			name = "Gif Test App";
+			packageProductDependencies = (
+				9A6A5440299A494700BA8ED9 /* SDWebImage */,
+				9A6A5442299A494700BA8ED9 /* SDWebImageMapKit */,
+			);
 			productName = "Gif Test App";
 			productReference = 9A6A5409299A48BC00BA8ED9 /* Gif Test App.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 9A6A5400299A48BC00BA8ED9;
+			packageReferences = (
+				9A6A543F299A494700BA8ED9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 9A6A540A299A48BC00BA8ED9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,8 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6A5411299A48BC00BA8ED9 /* ViewController.swift in Sources */,
+				9A6A544F299A6BC300BA8ED9 /* GifCollectionViewController.swift in Sources */,
 				9A6A540D299A48BC00BA8ED9 /* AppDelegate.swift in Sources */,
+				9A6A5453299A6D8C00BA8ED9 /* GifCollectionViewCell.swift in Sources */,
+				9A6A5451299A6CA400BA8ED9 /* DogData.swift in Sources */,
 				9A6A5417299A48BC00BA8ED9 /* Gif_Test_App.xcdatamodeld in Sources */,
+				9A6A5449299A5C8500BA8ED9 /* GifData.swift in Sources */,
 				9A6A540F299A48BC00BA8ED9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +627,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A6A543F299A494700BA8ED9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A6A5440299A494700BA8ED9 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A6A543F299A494700BA8ED9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		9A6A5442299A494700BA8ED9 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A6A543F299A494700BA8ED9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9A6A5415299A48BC00BA8ED9 /* Gif_Test_App.xcdatamodeld */ = {
